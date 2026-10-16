@@ -1,4 +1,4 @@
-from pcp_simulator import PCPSystem
+from simulador_pcp import PCPSystem
 
 def main():
     # Instância com solução
