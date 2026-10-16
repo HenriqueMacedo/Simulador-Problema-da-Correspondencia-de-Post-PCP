@@ -1,7 +1,7 @@
 """
-SIMULADOR DO PROBLEMA DA CORRESPONDÊNCIA DE POST (PCP)
-Referência: Diverio & Menezes (2011), Cap. 9 - Computabilidade
-Atividade: Seminário de Teoria da Computação - Engenharia
+SIMULADOR DO PROBLEMA DA CORRESPONDÊNCIA DE POST (PCP).
+Referência: Diverio & Menezes (2011), Cap. 9 - Computabilidade.
+Para o seminário de Teoria da Computação.
 """
 
 from collections import deque
@@ -69,12 +69,12 @@ class PCPSystem:
         print(f"Sequência testada: {sequence}")
         print(f"  CIMA  : '{top_str}'")
         print(f"  BAIXO : '{bottom_str}'")
-        print(f"  Resultado: {'MATCH (Solução válida!)' if is_match else 'DIFERENTE (Não é solução)'}")
+        print(f"  Resultado: {'Solução válida!' if is_match else 'Não é solução'}")
         return is_match
 
     def solve_bfs(self, max_depth: int = 5) -> Optional[List[int]]:
         """
-        Busca uma solução para o PCP usando busca em largura (BFS) até uma profundidade máxima.
+        Busca uma solução para o PCP usando BFS até uma profundidade máxima.
         """
         queue = deque([([], "", "")])
 
